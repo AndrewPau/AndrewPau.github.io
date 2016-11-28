@@ -1,7 +1,267 @@
-#navbarContainer {
+html,body
+{
     width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
-.section {
+#navbarContainer {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #595959;
+}
 
+#name {
+    font-family: 'Shadows Into Light', cursive;
+    position: absolute;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 34px;
+}
+
+#andrew {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 180px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+#andrew_header {
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+}
+
+#andrew_text {
+    font-family: 'Anton', sans-serif;
+    margin-top: 180px;
+    margin-right: 130px;
+    float: left;
+    font-size: 20px;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+
+#About {
+    background-image: url("../img/background.jpg");
+    image-rendering: -webkit-optimize-contrast;
+}
+
+#Projects {
+    background: linear-gradient(
+                     rgba(20,20,20, .5),
+                     rgba(20,20,20, .5)
+                     ),
+                     url("../img/project.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#git {
+    background-color: white;
+}
+
+#School {
+    background: linear-gradient(
+                     rgba(20,20,20, .5),
+                     rgba(20,20,20, .5)
+                     ),
+                     url("../img/courses.jpg");
+}
+
+#Contact {
+    background: linear-gradient(
+                     rgba(20,20,20, .2),
+                     rgba(20,20,20, .2)
+                     ),
+                     url("../img/contact.jpg");
+}
+
+#message {
+    width: 80%;
+    padding: 10px 10px 120px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    resize: none;
+    border: 2px solid #ccc;
+}
+
+#submit {
+    cursor: pointer;
+    background-color: #999999;
+    font-size: 16px;
+    width: 80%;
+    color: black;
+    margin: 20px;
+}
+
+#Github {
+    background-color: #e6e6e6;
+}
+
+.navbarItem {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    float: right;
+    width: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navbarItem:hover {
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.8s;
+}
+
+.andrew_container {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.slide {
+    width: 100%;
+    height: 625px;
+}
+
+.label {
+    font-family: 'Shadows Into Light', cursive;
+    float: left;
+    font-size: 25px;
+    width: 100%;
+    margin: 10px;
+    color: #e6e6e6;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+}
+
+.projectPic {
+    margin-left: 75px;
+    float: left;
+    object-fit: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.projectText {
+    margin-left: 40px;
+    height: 130px;
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    color: #e6e6e6;
+    font-family: 'Anton', sans-serif;
+}
+
+.projectPic:hover {
+    transition: 0.7s;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.courses {
+    color: #e6e6e6;
+    width: 50%;
+    height: 400px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+}
+
+.course {
+    color: #e6e6e6;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.form {
+    width: 80%;
+    padding: 10px 10px 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+}
+
+.contact_container {
+    float: left;
+    width: 50%;
+    height: 400px;
+    font-size: 25px;
+    text-align: center;
+    color: #e6e6e6;
+    font-family: 'Anton', sans-serif;
+}
+
+.media {
+    float: left;
+    height: 75px;
+    width: 75px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+.media:hover {
+    cursor: pointer;
+}
+
+.link {
+    height: 120px;
+    width: 100%;
+    font-size: 40px;
+}
+
+.LinkedIn {
+    display: none;
+    margin: 30px;
+    float: left;
+}
+
+.Instagram {
+    display: none;
+    float: left;
+    margin: 30px;
+}
+
+.Github {
+    display: none;
+    float: left;
+    margin: 30px;
+}
+
+.Facebook {
+    display: none;
+    float: left;
+    margin: 30px;
 }

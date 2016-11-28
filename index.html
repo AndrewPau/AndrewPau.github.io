@@ -1,31 +1,95 @@
 <html>
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src = "assets/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Shadows+Into+Light" rel="stylesheet">
 </head>
 <body>
     <div id="navbarContainer">
-        <div class="navbarItem">Andrew Pau</div>
-        <div class="navbarItem">About</div>
-        <div class="navbarItem">Projects</div>
-        <div class="navbarItem">School</div>
+        <div id="name">Andrew Pau</div>
         <div class="navbarItem">Contact</div>
+        <div class="navbarItem">School</div>
+        <div class="navbarItem">Projects</div>
+        <div class="navbarItem">About</div>
     </div>
-    <div class="section">
-    </div>
-    <div class="section">
-    </div>
-    <div class="section">
-    </div>
-    <div class="section">
+    <section id="About" class="slide">
+        <!-- <img id="background" src="assets/img/background.jpg"> -->
+            <div class="andrew_container">
+                <img id="andrew" src="assets/img/andrew.jpeg">
+            </div>
+            <div class="andrew_container">
+                <div id="andrew_text">
+                    <div id="andrew_header">Hi, nice to meet you!</div>
+                    I'm Andrew Pau, and I'm a third year Computer Science major at UC Berkeley. I'm interested in web applications,
+                    machine learning, artificial intelligence, search optimization, and general backend development. On campus, I am involved in a robotics team called Cal Rover
+                    and a social fraternity, Pi Kappa Phi. My hobbies include playing sports and video games, attending concerts, and weightlifting.
+                </div>
+            </div>
+    </section>
+    <section id="Projects" class="slide">
+        <div class="label">Projects</div>
+            <div class="project" id="matrix">
+                <img class="projectPic" src="assets/img/matrix.png">
+                <p class="projectText">Constructed a matrix computation program capable of all fundamental matrix operations, which includes features include computing the
+                    change of basis matrix, QR factorization, eigenvalues and eigenvectors, basis of the column and null space,
+                    and orthonormalizing a set using Gram-Schmidt.
+                </p>
+            </div>
+            <div class="project" id="gitlet">
+                <img class="projectPic" id="git" src="assets/img/gitlet.jpeg">
+                <p class="projectText">Created a simplified version-control system similar to Git using SHA-1 hash codes, capable of add, commit, checkout, delete, branch,
+                     and merge commands. Serialized the runtime objects to maintain the state of the program across commands.
+                 </p>
+            </div>
+            <div class="project" id="loa">
+                <img class="projectPic" src=assets/img/loa.png>
+                <p class="projectText">Implemented both front end and back end features for a two-player strategy board game, as well as developed an AI using game trees and
+                    alpha-beta pruning of up to depth two and a GUI using the UCB Java graphics library.
+                </p>
+            </div>
+    </section>
+    <section id="School" class="slide">
+        <div class="label">School</div>
+            <div class="courses"> Major courses
+                <div class="course">Introduction to Artificial Intelligence (CS 188)</div>
+                <div class="course">Efficient Algorithms and Intractable Problems (CS 170)</div>
+                <div class="course">Discrete Mathematics and Probability Theory (CS 70)</div>
+                <div class="course">The Structure and Interpretation of Computer Programs (CS 61A)</div>
+                <div class="course">Data Structures (CS 61B)</div>
+                <div class="course">Machine Structures (CS 61C)</div>
+                <div class="course">Linear Algebra and Differential Equations (MATH 54)</div>
+                <div class="course">Calculus I (MATH 1A)</div>
+                <div class="course">Calculus II (MATH 1B)</div>
+            </div>
+            <div class="courses">Nonmajor courses
+                <div class="course">International Environmental Politics (ESPM 169)</div>
+                <div class="course">Introduction to Culture and Natural Resource Management (ESPM 50AC)</div>
+                <div class="course">Chemical Structure and Reactivity (CHEM 3A)</div>
+                <div class="course">General Chemistry (CHEM 1A)</div>
+                <div class="course">Music in American Culture (MUSIC 26AC)</div>
+                <div class="course">Reading and Composition (ASAMST R2A)</div>
+                <div class="course">Reading and Composition (ITALIAN R5B)</div>
+            </div>
+    </section>
+    <section id="Contact" class="slide">
+        <div class="label">Contact</div>
+        <div class="contact_container"> Email Me!
         <form id="contactForm" action="https://formspree.io/apau4180@berkeley.edu" method="POST">
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="_replyto" placeholder="Your email">
+            <input class="form" type="text" name="name" placeholder="Name">
+            <input class="form" type="email" name="_replyto" placeholder="Your email">
             <input type="hidden" name="_subject" value="Website contact" />
-            <textarea placeholder="Your message"></textarea>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
             <input type="text" name="_gotcha" style="display:none" />
-            <input type="submit" value="Send">
-    </form>
-    </div>
+            <input id="submit" type="submit" value="Send">
+        </form>
+        </div>
+        <div class="contact_container"> Other Links!
+            <div class="link"><img class="media" id="LinkedIn" src="assets/img/linkedin.png"><div class="LinkedIn"><b>LinkedIn</b></div></div>
+            <div class="link"><img class="media" id="Github" src="assets/img/Github.png"><div class="Github"><b>Github</b></div></div>
+            <div class="link"><img class="media" id="Facebook" src="assets/img/Facebook.png"><div class="Facebook"><b>Facebook</b></div></div>
+            <div class="link"><img class="media" id="Instagram" src="assets/img/Instagram.png"><div class="Instagram"><b>Instagram</b></div></div>
+        </div>
+    </section>
 </body>
 </html>
