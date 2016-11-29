@@ -85,10 +85,16 @@ html,body
 
 #Contact {
     background: linear-gradient(
-                     rgba(20,20,20, .2),
-                     rgba(20,20,20, .2)
+                     rgba(20,20,20, .5),
+                     rgba(20,20,20, .5)
                      ),
                      url("../img/contact.jpg");
+                     background-repeat:no-repeat;
+                     background-position:center;
+                     -webkit-background-size: cover;
+                     -moz-background-size: cover;
+                     -o-background-size: cover;
+                     background-size: cover;
 }
 
 #message {
@@ -264,4 +270,20 @@ html,body
     display: none;
     float: left;
     margin: 30px;
+}
+
+
+@media(max-width: 890px) {
+    .navbarItem {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #andrew_text {
+        width: 100%;
+    }
+
+    #andrew {
+        margin-left: 50px;
+    }
 }
