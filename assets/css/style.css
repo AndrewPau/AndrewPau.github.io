@@ -37,16 +37,16 @@ html,body
 }
 
 #andrew_header {
-    font-size: 45px;
-    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #andrew_text {
-    font-family: 'Anton', sans-serif;
-    margin-top: 180px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 140px;
     margin-right: 130px;
     float: left;
-    font-size: 20px;
+    font-size: 25px;
     color: #e6e6e6;
     text-align: center;
 }
@@ -112,10 +112,18 @@ html,body
 #submit {
     cursor: pointer;
     background-color: #999999;
-    font-size: 16px;
+    font-size: 18px;
     width: 80%;
     color: black;
     margin: 20px;
+    opacity: 0.8;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#submit:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.8s;
 }
 
 #Github {
@@ -179,9 +187,9 @@ html,body
     height: 130px;
     width: 50%;
     float: left;
-    font-size: 18px;
+    font-size: 20px;
     color: #e6e6e6;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .projectPic:hover {
@@ -196,14 +204,14 @@ html,body
     height: 400px;
     float: left;
     text-align: center;
-    font-size: 25px;
-    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .course {
     color: #e6e6e6;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     margin: 10px;
 }
 
@@ -212,20 +220,21 @@ html,body
     padding: 10px 10px 10px;
     margin: 20px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 4px;
     background-color: #f8f8f8;
     border: 2px solid #ccc;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .contact_container {
     float: left;
     width: 50%;
     height: 400px;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     color: #e6e6e6;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .media {
@@ -272,7 +281,6 @@ html,body
     margin: 30px;
 }
 
-
 @media(max-width: 890px) {
     .navbarItem {
         margin-left: 30px;
@@ -281,9 +289,14 @@ html,body
 
     #andrew_text {
         width: 100%;
+        font-size: 20px;
     }
 
     #andrew {
         margin-left: 50px;
+    }
+
+    .projectText {
+        font-size: 16px;
     }
 }
