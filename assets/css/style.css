@@ -175,15 +175,18 @@ html,body
 }
 
 .projectPic {
+    position: relative;
     margin-left: 75px;
     float: left;
+    left: 40px;
     object-fit: cover;
     width: 130px;
     height: 130px;
 }
 
 .projectText {
-    margin-left: 40px;
+    position: relative;
+    margin-left: 75px;
     height: 130px;
     width: 50%;
     float: left;
