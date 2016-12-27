@@ -15,4 +15,17 @@ $(document).ready(function() {
         $(media).stop(true, true).fadeOut(400);
     });
 
+    $("#menu-trigger").click(function() {
+        var show = $(".mobile-menu").hasClass("active");
+        if (show) {
+            $(".mobile-menu").removeClass("active");
+        } else {
+            $(".mobile-menu").addClass("active");
+        }
+    });
+
+    $(".mobile-menu .navbarItem").click(function() {
+        $(".mobile-menu").removeClass("active");
+    });
+
 });

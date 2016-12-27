@@ -1,24 +1,33 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src = "assets/js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="navbarContainer">
+        <div id="menu-trigger" class="mobile"><i class="fa fa-bars" style="font-size: 20px;"></i></div>
         <div id="name">Andrew Pau</div>
-        <div class="navbarItem">Contact</div>
-        <div class="navbarItem">School</div>
-        <div class="navbarItem">Projects</div>
-        <div class="navbarItem">About</div>
+        <div class="navbarItem desktop">Contact</div>
+        <div class="navbarItem desktop">School</div>
+        <div class="navbarItem desktop">Projects</div>
+        <div class="navbarItem desktop">About</div>
+        <div class="mobile mobile-menu">
+            <div class="navbarItem">About</div>
+            <div class="navbarItem">Projects</div>
+            <div class="navbarItem">School</div>
+            <div class="navbarItem">Contact</div>
+        </div>
     </div>
-    <section id="About" class="slide">
-        <!-- <img id="background" src="assets/img/background.jpg"> -->
-            <div class="andrew_container">
+    <section id="About" class="slide clearfix">
+        <div class="inner">
+            <div class="andrew_container clearfix">
                 <img id="andrew" src="assets/img/andrew.jpeg">
             </div>
-            <div class="andrew_container">
+            <div class="andrew_container clearfix">
                 <div id="andrew_text">
                     <div id="andrew_header">Hi, nice to meet you!</div>
                     I'm Andrew Pau, and I'm a third year Computer Science major at UC Berkeley. I'm interested in web applications,
@@ -26,11 +35,13 @@
                     and a social fraternity, Pi Kappa Phi. My hobbies include playing sports and video games, attending concerts, and weightlifting.
                 </div>
             </div>
+        </div>
     </section>
-    <section id="Projects" class="slide">
+    <section id="Projects" class="slide clearfix">
         <div class="label">Projects</div>
-            <div class="project" id="matrix">
-                <a href="https://github.com/AndrewPau/matrix_calculator">
+        <div class="inner">
+            <div class="project clearfix" id="matrix">
+                <a class="project-link clearfix" href="https://github.com/AndrewPau/matrix_calculator">
                     <img class="projectPic" src="assets/img/matrix.png">
                 </a>
                 <p class="projectText">Constructed a matrix computation program capable of all fundamental matrix operations, which includes features include computing the
@@ -38,26 +49,28 @@
                     and orthonormalizing a set using Gram-Schmidt.
                 </p>
             </div>
-            <div class="project" id="gitlet">
-                <a href="https://github.com/AndrewPau">
+            <div class="project clearfix" id="gitlet">
+                <a class="project-link clearfix" href="https://github.com/AndrewPau">
                     <img class="projectPic" id="git" src="assets/img/gitlet.jpeg">
                 </a>
                 <p class="projectText">Created a simplified version-control system similar to Git using SHA-1 hash codes, capable of add, commit, checkout, delete, branch,
                      and merge commands. Serialized the runtime objects to maintain the state of the program across commands.
                  </p>
             </div>
-            <div class="project" id="loa">
-                <a href="https://github.com/AndrewPau">
+            <div class="project clearfix" id="loa">
+                <a class="project-link clearfix" href="https://github.com/AndrewPau">
                     <img class="projectPic" src=assets/img/loa.png>
                 </a>
                 <p class="projectText">Implemented both front end and back end features for a two-player strategy board game, as well as developed an AI using game trees and
                     alpha-beta pruning of up to depth two and a GUI using the UCB Java graphics library.
                 </p>
             </div>
+        </div>
     </section>
-    <section id="School" class="slide">
+    <section id="School" class="slide clearfix">
         <div class="label">School</div>
-            <div class="courses"> Major courses
+        <div class="inner">
+            <div class="courses clearfix"> Major courses
                 <div class="course">Introduction to Artificial Intelligence (CS 188)</div>
                 <div class="course">Efficient Algorithms and Intractable Problems (CS 170)</div>
                 <div class="course">Discrete Mathematics and Probability Theory (CS 70)</div>
@@ -68,7 +81,7 @@
                 <div class="course">Calculus I (MATH 1A)</div>
                 <div class="course">Calculus II (MATH 1B)</div>
             </div>
-            <div class="courses">Nonmajor courses
+            <div class="courses clearfix">Nonmajor courses
                 <div class="course">International Environmental Politics (ESPM 169)</div>
                 <div class="course">Introduction to Culture and Natural Resource Management (ESPM 50AC)</div>
                 <div class="course">Chemical Structure and Reactivity (CHEM 3A)</div>
@@ -77,10 +90,12 @@
                 <div class="course">Reading and Composition (ASAMST R2A)</div>
                 <div class="course">Reading and Composition (ITALIAN R5B)</div>
             </div>
+        </div>
     </section>
-    <section id="Contact" class="slide">
+    <section id="Contact" class="slide clearfix">
         <div class="label">Contact</div>
-        <div class="contact_container"> Email me!
+        <div class="inner">
+        <div class="contact_container clearfix"> Email me!
         <form id="contactForm" action="https://formspree.io/apau4180@berkeley.edu" method="POST">
             <input class="form" type="text" name="name" placeholder="Name">
             <input class="form" type="email" name="_replyto" placeholder="Your email">
@@ -90,7 +105,7 @@
             <input id="submit" type="submit" value="Send">
         </form>
         </div>
-        <div class="contact_container"> Other links!
+        <div class="contact_container clearfix"> Other links!
             <div class="link">
                 <a href="https://www.linkedin.com/in/andrew-pau-52a4aaa5">
                     <img class="media" id="LinkedIn" src="assets/img/linkedin.png">
@@ -124,6 +139,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
 </body>
 </html>
