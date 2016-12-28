@@ -8,8 +8,9 @@ $(document).ready(function() {
 
     $(".media").hover(function() {
         var media = "." + this.id;
-        console.log(media);
-        $(media).stop(true, true).fadeIn(400);
+        if ($(window).width() > 700) {
+            $(media).stop(true, true).fadeIn(400);
+        }
     }, function() {
         var media = "." + this.id;
         $(media).stop(true, true).fadeOut(400);
