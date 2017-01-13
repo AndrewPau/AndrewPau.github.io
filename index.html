@@ -1,12 +1,14 @@
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src = "assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Shadows+Into+Light" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div id="navbarContainer">
         <div id="menu-trigger" class="mobile"><i class="fa fa-bars" style="font-size: 20px;"></i></div>
@@ -30,9 +32,8 @@
             <div class="andrew_container clearfix">
                 <div id="andrew_text">
                     <div id="andrew_header">Hi, nice to meet you!</div>
-                    I'm Andrew Pau, and I'm a third year Computer Science major at UC Berkeley. I'm interested in web applications,
-                    machine learning, artificial intelligence, search optimization, and general backend development. On campus, I am involved in a robotics team called Cal Rover
-                    and a social fraternity, Pi Kappa Phi. My hobbies include playing sports and video games, attending concerts, and weightlifting.
+                    I'm Andrew Pau, and I'm a third year Computer Science major at UC Berkeley. I'm interested in web applications, machine learning, artificial intelligence, search optimization, and general backend development. On campus, I am involved in a robotics team
+                    called Cal Rover and a social fraternity, Pi Kappa Phi. My hobbies include playing sports and video games, attending concerts, and weightlifting.
                 </div>
             </div>
         </div>
@@ -40,12 +41,19 @@
     <section id="Projects" class="slide clearfix">
         <div class="label">Projects</div>
         <div class="inner">
+            <div class="project clearfix" id="loa">
+                <a class="project-link clearfix" href="https://github.com/AndrewPau/siteTracker">
+                    <img class="projectPic" src=assets/img/extension.jpg>
+                </a>
+                <p class="projectText">Created a persistent Google Chrome extension that tracks user activity on various websites, utilizing a self-written REST API in Node.js and Express to communicate with a NoSQL database (MongoDB). Integrated user authentication for protected
+                    endpoints with Passport.js and hashed passwords with bcrypt.js.
+                </p>
+            </div>
             <div class="project clearfix" id="matrix">
                 <a class="project-link clearfix" href="https://github.com/AndrewPau/matrix_calculator">
                     <img class="projectPic" src="assets/img/matrix.png">
                 </a>
-                <p class="projectText">Constructed a matrix computation program capable of all fundamental matrix operations, which includes features include computing the
-                    change of basis matrix, QR factorization, eigenvalues and eigenvectors, basis of the column and null space,
+                <p class="projectText">Constructed a matrix computation program capable of all fundamental matrix operations, which includes features include computing the change of basis matrix, QR factorization, eigenvalues and eigenvectors, basis of the column and null space,
                     and orthonormalizing a set using Gram-Schmidt.
                 </p>
             </div>
@@ -53,16 +61,7 @@
                 <a class="project-link clearfix" href="https://github.com/AndrewPau">
                     <img class="projectPic" id="git" src="assets/img/gitlet.jpeg">
                 </a>
-                <p class="projectText">Created a simplified version-control system similar to Git using SHA-1 hash codes, capable of add, commit, checkout, delete, branch,
-                     and merge commands. Serialized the runtime objects to maintain the state of the program across commands.
-                 </p>
-            </div>
-            <div class="project clearfix" id="loa">
-                <a class="project-link clearfix" href="https://github.com/AndrewPau">
-                    <img class="projectPic" src=assets/img/loa.png>
-                </a>
-                <p class="projectText">Implemented both front end and back end features for a two-player strategy board game, as well as developed an AI using game trees and
-                    alpha-beta pruning of up to depth two and a GUI using the UCB Java graphics library.
+                <p class="projectText">Created a simplified version-control system similar to Git using SHA-1 hash codes, capable of add, commit, checkout, delete, branch, and merge commands. Serialized the runtime objects to maintain the state of the program across commands.
                 </p>
             </div>
         </div>
@@ -71,17 +70,21 @@
         <div class="label">School</div>
         <div class="inner">
             <div class="courses clearfix"> Major courses
+                <div class="course">Operating Systems and Systems Programming (CS 162)</div>
                 <div class="course">Introduction to Artificial Intelligence (CS 188)</div>
                 <div class="course">Efficient Algorithms and Intractable Problems (CS 170)</div>
                 <div class="course">Discrete Mathematics and Probability Theory (CS 70)</div>
                 <div class="course">The Structure and Interpretation of Computer Programs (CS 61A)</div>
                 <div class="course">Data Structures (CS 61B)</div>
                 <div class="course">Machine Structures (CS 61C)</div>
+                <div class="course">Foundations of Data Science (CS C8)</div>
+                <div class="course">Designing Information Devices and Systems I (EE 16A)</div>
                 <div class="course">Linear Algebra and Differential Equations (MATH 54)</div>
                 <div class="course">Calculus I (MATH 1A)</div>
                 <div class="course">Calculus II (MATH 1B)</div>
             </div>
             <div class="courses clearfix">Nonmajor courses
+                <div class="course">Social Psychology (PSYCH 160)</div>
                 <div class="course">International Environmental Politics (ESPM 169)</div>
                 <div class="course">Introduction to Culture and Natural Resource Management (ESPM 50AC)</div>
                 <div class="course">Chemical Structure and Reactivity (CHEM 3A)</div>
@@ -95,51 +98,52 @@
     <section id="Contact" class="slide clearfix">
         <div class="label">Contact</div>
         <div class="inner">
-        <div class="contact_container clearfix"> Email me!
-        <form id="contactForm" action="https://formspree.io/apau4180@berkeley.edu" method="POST">
-            <input class="form" type="text" name="name" placeholder="Name">
-            <input class="form" type="email" name="_replyto" placeholder="Your email">
-            <input type="hidden" name="_subject" value="Website contact" />
-            <textarea class="form" id="message" name="message" placeholder="Your message"></textarea>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input id="submit" type="submit" value="Send">
-        </form>
+            <div class="contact_container clearfix"> Email me!
+                <form id="contactForm" action="https://formspree.io/apau4180@berkeley.edu" method="POST">
+                    <input class="form" type="text" name="name" placeholder="Name">
+                    <input class="form" type="email" name="_replyto" placeholder="Your email">
+                    <input type="hidden" name="_subject" value="Website contact" />
+                    <textarea class="form" id="message" name="message" placeholder="Your message"></textarea>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input id="submit" type="submit" value="Send">
+                </form>
+            </div>
+            <div class="contact_container clearfix"> Other links!
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/andrew-pau-52a4aaa5">
+                        <img class="media" id="LinkedIn" src="assets/img/linkedin.png">
+                    </a>
+                    <div class="LinkedIn">
+                        <b>LinkedIn</b>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="https://github.com/AndrewPau">
+                        <img class="media" id="Github" src="assets/img/Github.png">
+                    </a>
+                    <div class="Github">
+                        <b>Github</b>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="https://www.facebook.com/andrew.pau.9">
+                        <img class="media" id="Facebook" src="assets/img/Facebook.png">
+                    </a>
+                    <div class="Facebook">
+                        <b>Facebook</b>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="https://www.instagram.com/andrewpau/">
+                        <img class="media" id="Instagram" src="assets/img/Instagram.png">
+                    </a>
+                    <div class="Instagram">
+                        <b>Instagram</b>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact_container clearfix"> Other links!
-            <div class="link">
-                <a href="https://www.linkedin.com/in/andrew-pau-52a4aaa5">
-                    <img class="media" id="LinkedIn" src="assets/img/linkedin.png">
-                </a>
-                <div class="LinkedIn">
-                    <b>LinkedIn</b>
-                </div>
-            </div>
-            <div class="link">
-                <a href="https://github.com/AndrewPau">
-                    <img class="media" id="Github" src="assets/img/Github.png">
-                </a>
-                <div class="Github">
-                    <b>Github</b>
-                </div>
-            </div>
-            <div class="link">
-                <a href="https://www.facebook.com/andrew.pau.9">
-                    <img class="media" id="Facebook" src="assets/img/Facebook.png">
-                </a>
-                <div class="Facebook">
-                    <b>Facebook</b>
-                </div>
-            </div>
-            <div class="link">
-                <a href="https://www.instagram.com/andrewpau/">
-                    <img class="media" id="Instagram" src="assets/img/Instagram.png">
-                </a>
-                <div class="Instagram">
-                    <b>Instagram</b>
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
 </body>
+
 </html>
