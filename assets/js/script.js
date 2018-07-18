@@ -1,12 +1,13 @@
 $(document).ready(function() {
-
+    
     $(".navbarItem").click(function() {
         var id = "#" + $(this).text();
         var top = $(id).offset().top;
-        $('html,body').animate({scrollTop: top - 50}, 500);
+        $('html, body').animate({scrollTop: top - 50}, 500);
     });
 
     $(".media").hover(function() {
+        console.log("hover");
         var media = "." + this.id;
         if ($(window).width() > 700) {
             $(media).stop(true, true).fadeIn(400);

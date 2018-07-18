@@ -4,7 +4,10 @@ html, body {
     min-height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    /* 
+    This was causing $('html, body').animate({scrollTop: top}) to not work.
+    Strange, because it worked in previous commit 1 year ago.
+    overflow-x: hidden; */
 }
 
 p {
